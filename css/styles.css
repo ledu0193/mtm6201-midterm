@@ -7,14 +7,44 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffdfba;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    /* Set your desired text color */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffb3ba;
+    /* Set your desired hover background color */
 }
 
 body {
     background-color: #FEECE2;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0; /* Remove default body margin */
+    margin: 0;
+    /* Remove default body margin */
 }
 
 header {
@@ -26,7 +56,8 @@ header {
 
 nav ul {
     list-style-type: none;
-    padding: 0; /* Remove default padding */
+    padding: 0;
+    /* Remove default padding */
 }
 
 nav ul li {
@@ -54,11 +85,12 @@ img {
 }
 
 /* Make globe images 15% smaller */
-img[src$="globe.png"],
-img[src$="colorful-globe.png"],
-img[src$="gold-metal-globe-icon-go-to-web-symbol-icon-website-homepage-icon-3d-rendering-free-png.webp"] {
-    width: 85%; /* Adjust the width as needed */
+.our-offers img[src$="colorful-globe-free-plan.png"],
+.our-offers img[src$="colorful-globe-stan.png"],
+.our-offers img[src$="colorful-globe-premium.png"] {
+    width: 85%;
 }
+
 
 .our-offers,
 .secure-networking {
@@ -71,7 +103,8 @@ img[src$="gold-metal-globe-icon-go-to-web-symbol-icon-website-homepage-icon-3d-r
 
 .Plans {
     display: flex;
-    flex-direction: row; /* Change to row for desktop layout */
+    flex-direction: row;
+    /* Change to row for desktop layout */
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -121,8 +154,10 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
     .Plans {
-        flex-direction: column; /* Change to column for mobile layout */
-        align-items: center; /* Center items in mobile layout */
+        flex-direction: column;
+        /* Change to column for mobile layout */
+        align-items: center;
+        /* Center items in mobile layout */
     }
 
     .Plans li {
@@ -134,7 +169,8 @@ button:hover {
     img[src$="globe.png"],
     img[src$="colorful-globe.png"],
     img[src$="gold-metal-globe-icon-go-to-web-symbol-icon-website-homepage-icon-3d-rendering-free-png.webp"] {
-        width: 115%; /* Adjust the width as needed */
+        width: 115%;
+
     }
 }
 
@@ -147,11 +183,30 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
 }
 
 button:hover {
     background-color: #555;
+}
+
+.customer-reviews {
+    text-align: center;
+}
+
+.review-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ff9800;
 }
 
 /* Style for buttons in the footer */
