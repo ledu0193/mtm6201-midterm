@@ -32,7 +32,7 @@ nav a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #000000; /* Set your desired text color */
+    color: #000000; 
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
