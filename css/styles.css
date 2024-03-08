@@ -72,6 +72,49 @@ nav ul li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.main-content {
+    text-align: center;
+}
+
+.what-we-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.what-we-do img {
+    max-width: 40%;
+    border-radius: 10px;
+    margin-right: auto;
+    order: 1;
+}
+
+.what-we-do-text {
+    max-width: 50%;
+    padding: 0 20px;
+
+}
+
+@media (max-width: 768px) {
+    .what-we-do {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .what-we-do-text {
+        max-width: 100%;
+   
+
+    }
+}
+
 h2,
 h3 {
     color: #333;
@@ -174,6 +217,48 @@ button:hover {
     }
 }
 
+.our-offers {
+    text-align: center;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plan {
+    width: 30%; 
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd; /* Added border for each plan box */
+    border-radius: 10px;
+}
+
+.plan img {
+    max-width: 100%; /* Ensure images within plan boxes are responsive */
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .plan {
+        width: 80%; /* Adjust the width of each plan box on smaller screens */
+    }
+}
 
 button {
     background-color: #333;
