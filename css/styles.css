@@ -1,3 +1,4 @@
+/* Reset styles */
 body,
 h1,
 h2,
@@ -8,7 +9,24 @@ li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
+}
+
+/* Global styles */
+body {
+    background-color: #f7f3f1;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #efeae7;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
 }
 
 nav ul {
@@ -29,50 +47,20 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     color: #000000;
-    /* Set your desired text color */
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #ff1f35;
-    /* Set your desired hover background color */
+    background-color: #ffb3ba;
 }
 
-body {
-    background-color: #fffefd;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    /* Remove default body margin */
-}
-
-header {
-    background-color: #fafafa;
-    color: #000000;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    /* Remove default padding */
-}
-
-nav ul li {
-    display: block;
-    margin-bottom: 10px;
-}
-
+/* Main content styles */
 .main-content {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.main-content {
     text-align: center;
 }
 
@@ -93,7 +81,6 @@ nav ul li {
 .what-we-do-text {
     max-width: 50%;
     padding: 0 20px;
-
 }
 
 @media (max-width: 768px) {
@@ -110,8 +97,6 @@ nav ul li {
 
     .what-we-do-text {
         max-width: 100%;
-   
-
     }
 }
 
@@ -127,13 +112,12 @@ img {
     margin-top: 10px;
 }
 
-/* Make globe images 15% smaller */
+/* Styling for globe images */
 .our-offers img[src$="colorful-globe-free-plan.png"],
 .our-offers img[src$="colorful-globe-stan.png"],
 .our-offers img[src$="colorful-globe-premium.png"] {
     width: 85%;
 }
-
 
 .our-offers,
 .secure-networking {
@@ -147,7 +131,6 @@ img {
 .Plans {
     display: flex;
     flex-direction: row;
-    /* Change to row for desktop layout */
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -164,7 +147,7 @@ footer {
     width: 100%;
 }
 
-
+/* Styling for the 'What We Do' section */
 .what-we-do {
     display: flex;
     flex-direction: column;
@@ -189,18 +172,18 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #b91515;
 }
 
+/* Responsive layout for plans */
 @media only screen and (max-width: 768px) {
     .Plans {
         flex-direction: column;
-        /* Change to column for mobile layout */
         align-items: center;
-        /* Center items in mobile layout */
     }
 
     .Plans li {
@@ -213,10 +196,10 @@ button:hover {
     img[src$="colorful-globe.png"],
     img[src$="gold-metal-globe-icon-go-to-web-symbol-icon-website-homepage-icon-3d-rendering-free-png.webp"] {
         width: 115%;
-
     }
 }
 
+/* Styling for VPN plans section */
 .our-offers {
     text-align: center;
 }
@@ -229,15 +212,15 @@ button:hover {
 }
 
 .plan {
-    width: 30%; 
+    width: 30%;
     padding: 20px;
     margin: 10px;
-    border: 1px solid #ddd; /* Added border for each plan box */
+    border: 1px solid #ddd;
     border-radius: 10px;
 }
 
 .plan img {
-    max-width: 100%; /* Ensure images within plan boxes are responsive */
+    max-width: 100%;
 }
 
 .plan ul {
@@ -256,7 +239,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .plan {
-        width: 80%; /* Adjust the width of each plan box on smaller screens */
+        width: 80%;
     }
 }
 
@@ -269,13 +252,13 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    /* Smooth transition for background color */
 }
 
 button:hover {
     background-color: #530707;
 }
 
+/* Styling for customer reviews section */
 .customer-reviews {
     text-align: center;
 }
@@ -300,9 +283,26 @@ button:hover {
     margin: 5px;
 }
 
+/* Styling for account creation link */
+.makeacc {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.makeacc a {
+    color: #2c312c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.makeacc a:hover {
+    color: #000000;
+}
+
+/* Styling for information section */
 .information {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -311,9 +311,16 @@ button:hover {
 }
 
 .info-box {
-    background-color: #fffefe; /* Set your desired background color */
+    background-color: #fffefe;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+/* Styling for the smaller map */
+.smaller-map {
+    max-width: 90%;
+    height: auto;
+    margin-top: 10px;
 }
