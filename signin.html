@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="css/signin.css">
     <title>Sign in</title>
 </head>
-<header>
-    <h1>VPN Service</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page1.html">Features</a></li>
-            <li><a href="page2.html">Contact</a></li>
-            <li><a href="signin.html">Sign In</a></li>
-        </ul>
-    </nav>
-</header>
+
 <body>
-    <h2>This dosent work just wanted something fancy.</h2>
+
+    <header>
+        <h1>VPN Service</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Features</a></li>
+                <li><a href="page2.html">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="signin-container">
         <h2>Sign In</h2>
         <form action="your_signin_processing_script.php" method="POST">
+            <!-- Sign-in form content -->
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
@@ -33,7 +36,15 @@
             <button type="submit">Sign In</button>
         </form>
     </div>
-    <!-- Footer Section -->
+
+    <section class="makeacc">
+        <nav>
+            <ul>
+                <li><a href="makeacc.html">Don't have an account?</a></li>
+            </ul>
+        </nav>
+    </section>
+
     <footer>
         <p>&copy; 2024 VPN Service. All rights reserved.</p>
         <button class="footer-button">Download</button>
@@ -42,3 +53,5 @@
         <button class="footer-button">Privacy and Policy</button>
     </footer>
 </body>
+
+</html>

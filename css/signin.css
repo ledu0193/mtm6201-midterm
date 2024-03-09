@@ -169,3 +169,19 @@ footer {
     padding: 1rem;
     width: 100%;
 }
+/* Your existing styles */
+
+.makeacc {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.makeacc a {
+    color: #2c312c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.makeacc a:hover {
+    color: #000000;
+}
