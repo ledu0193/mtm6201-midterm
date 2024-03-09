@@ -192,7 +192,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #b91515;
 }
 
 @media only screen and (max-width: 768px) {
@@ -246,7 +246,7 @@ button:hover {
 }
 
 .plan button {
-    background-color: #4CAF50;
+    background-color: #f15353;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -261,7 +261,7 @@ button:hover {
 }
 
 button {
-    background-color: #333;
+    background-color: #f6eaea;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -273,7 +273,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #530707;
 }
 
 .customer-reviews {
