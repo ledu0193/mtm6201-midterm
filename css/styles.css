@@ -299,3 +299,21 @@ button:hover {
     background-color: #555;
     margin: 5px;
 }
+
+.information {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    margin-top: 20px;
+}
+
+.info-container {
+    flex: 1;
+}
+
+.info-box {
+    background-color: #fffefe; /* Set your desired background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
