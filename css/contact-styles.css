@@ -92,8 +92,8 @@ footer {
 }
 
 .footer-button {
-    background-color: #555;
-    color: #fff;
+    background-color: #db5d5d;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -103,5 +103,11 @@ footer {
 }
 
 .footer-button:hover {
-    background-color: #777;
+    background-color: #4c1010;
+}
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
