@@ -54,6 +54,224 @@ nav a {
 nav a:hover {
     background-color: #ffb3ba;
 }
+/* Additional styling for the 'Welcome to our LaslesVPN' section */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.what-we-do-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.what-we-do-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.what-we-do-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* Additional styling for the 'Welcome to our LaslesVPN' section */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.what-we-do {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.what-we-do-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do img {
+    max-width: 30%; /* Adjust the size of the image */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.what-we-do-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* Additional styling for the 'Welcome to our LaslesVPN' section */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.what-we-do {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.what-we-do-content {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.what-we-do img {
+    max-width: 30%; /* Adjust the size of the image */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.what-we-do-text {
+    text-align: center; /* Center text horizontally */
+}
+
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text vertically */
+}
+
+.centered-text h2,
+.centered-text p {
+    margin: 0; /* Remove default margins */
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional styling for the 'We Provide' section */
+.we-provide {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.we-provide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.we-provide img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.we-provide-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.we-provide-text h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.we-provide-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.we-provide-text li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .we-provide-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .we-provide img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
 
 /* Main content styles */
 .main-content {
